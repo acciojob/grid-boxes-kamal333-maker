@@ -1,41 +1,37 @@
-/*  your css code here. If applicable */
-#grid{
-	display:grid;
-	height:600px;
-	width:900px;
-	grid-template-columns:124pxr 124px 124px 124px;
-	grid-template-rows:124px 124px 124px 124px 124px;
+/* your css code here. If applicable */
+#grid {
+  display: grid;
+  height: 600px;
+  width: 1000px;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 124px);
+  grid-gap: 10px;
 }
 
-div{
-	background-color:green;
-	color:white;
-	margin:3px;
-	font-size:30px;
+#grid > div {
+  background-color: green;
+  color: white;
+  font-size: 30px;
 }
 
-#one{
-	grid-column:1/5;
-	
+/* Grid spans expected by Cypress */
+#one {
+  grid-column: span 4;
 }
 
-#two{
-	grid-column-start:1;
-	grid-column-end:2;
-	grid-row-start:2;
-	grid-row-end:6;
+#two {
+  grid-row: span 4;
 }
 
-#four{
-	grid-column-start:3;
-	grid-column-end:5;
-}
-#five{
-	grid-column-start:2;
-	grid-column-end:4;
+#four {
+  grid-column: span 2;
 }
 
-#ten{
-	grid-column-start:2;
-	grid-column-end:5;
+#five {
+  grid-column: span 2;
+}
+
+#ten {
+  grid-column: span 3;
 }
