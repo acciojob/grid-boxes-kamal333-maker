@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+#grid{
+	display:grid;
+	height:600px;
+	width:900px;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+div{
+	background-color:green;
+	color:white;
+	margin:3px;
+	font-size:30px;
+}
+
+#one{
+	grid-column-start:1;
+	grid-column-end:5;
+}
+
+#two{
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start:2;
+	grid-row-end:6;
+}
+
+#four{
+	grid-column-start:3;
+	grid-column-end:5;
+}
+#five{
+	grid-column-start:2;
+	grid-column-end:4;
+}
+
+#ten{
+	grid-column-start:2;
+	grid-column-end:5;
+}
