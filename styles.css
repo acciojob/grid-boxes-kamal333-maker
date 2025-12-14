@@ -3,7 +3,8 @@
 	display:grid;
 	height:600px;
 	width:900px;
-	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-columns:124pxr 124px 124px 124px;
+	grid-template-rows:124px 124px 124px 124px 124px;
 }
 
 div{
@@ -14,8 +15,8 @@ div{
 }
 
 #one{
-	grid-column-start:1;
-	grid-column-end:5;
+	grid-column:1/5;
+	
 }
 
 #two{
